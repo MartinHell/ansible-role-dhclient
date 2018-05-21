@@ -25,7 +25,7 @@ request subnet-mask, broadcast-address, time-offset, routers,
 #prepend domain-name-servers 127.0.0.1;
 {% if dhclient_nameservers is defined %}
 {% for nameserver in dhclient_nameservers %}
-{{ nameserver.action }}  {{ nameserver.type }}  {{ nameserver.address }}
+{{ nameserver.action }}  {{ nameserver.type }}  {{ nameserver.address }};
 {% endfor %}
 {% endif -%}
 #require subnet-mask, domain-name-servers;
