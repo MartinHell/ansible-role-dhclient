@@ -1,5 +1,7 @@
 ---
 
+dhclient_config_file: "/etc/dhcp/dhclient.conf"
+
 #dhclient_nameservers:
 #  - { action: 'prepend' type: 'domain-name-servers', address: '127.0.0.1' }
 
