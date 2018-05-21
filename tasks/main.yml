@@ -1,0 +1,8 @@
+---
+
+- name: Create dhclient.conf
+  template:
+    src: dhclient.conf.j2
+    dest: "{{ dhclient_config_file }}"
+  notify: Reload dhclient
+  become: true

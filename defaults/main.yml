@@ -1,0 +1,6 @@
+---
+
+dhclient_nameservers:
+  - { action: 'prepend' type: 'domain-name-servers', address: '127.0.0.1' }
+
+dhclient_timeout: "300"
